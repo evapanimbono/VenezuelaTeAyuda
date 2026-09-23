@@ -49,31 +49,26 @@ El sistema cuenta con una arquitectura modular enfocada en la gestión de empleo
 
 ## 💻 Instalación y Ejecución Local
 
-**Paso 1: Clonar el repositorio**
-```bash
-git clone [https://github.com/evapanimbono/VenezuelaTeAyuda.git](https://github.com/evapanimbono/VenezuelaTeAyuda.git)
+### 1. Clonar el repositorio
+git clone https://github.com/evapanimbono/VenezuelaTeAyuda.git
 cd VenezuelaTeAyuda
 
 ### 2. Crear y activar el entorno virtual
-
-    python -m venv venv
+python -m venv venv
 
 En Linux/macOS:
-
-    source venv/bin/activate
+source venv/bin/activate
 
 En Windows:
-
-    venv\Scripts\activate
+venv\Scripts\activate
 
 ### 3. Instalar dependencias
-
-    pip install -r requirements.txt
+pip install -r requirements.txt
 
 ### 4. Aplicar migraciones y ejecutar servidor
+python gestionar.py migrate
 
-    python manage.py migrate
-    python manage.py runserver
+python gestionar.py runserver
 
 Abre http://127.0.0.1:8000/ en tu navegador.
 
@@ -82,3 +77,4 @@ Abre http://127.0.0.1:8000/ en tu navegador.
 ## ✒️ Autora
 
 * **Eva Panimbono** - *Software Engineer / Full-Stack Developer* - [GitHub](https://github.com/evapanimbono) | [LinkedIn](https://www.linkedin.com/in/evapanimbono)
+
